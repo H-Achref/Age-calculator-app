@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="./assets/js/counter.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <div class="form-groupe">
+        <div class="input-label input-day">
+          <label>DAY</label>
+          <input type="text" name="day" id="birth_day" placeholder="DD" required="">
+          <span class="error" id="valid_date">must be a valid day</span>
+          <span class="required" id="required_date">this field is required</span>
+        </div>
+        <div class="input-label input-month">
+          <label>MONTH</label>
+          <input type="text" name="month" id="birth_month" placeholder="MM" required="">
+          <span class="error" id="valid_month">must be a valid month</span>
+          <span class="required" id="required_month">this field is required</span>
+        </div>
+        <div class="input-label input-year">
+          <label>YEAR</label>
+          <input type="text" name="year" id="birth_year" placeholder="YYYY" required="">
+          <span class="error" id="valid_year">must be in the past</span>
+          <span class="required" id="required_year">this field is required</span>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button type="submit" class="btn" onclick="birthDayDate()"><img src="./assets/images/icon-arrow.svg"></button>
+      </div>
+      <div class="age-container">
+        <p><span class="count" id="years">--</span> years</p>
+        <p><span class="count" id="months">--</span> months</p>
+        <p><span class="count" id="days">--</span> days</p>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hedhili Achref</a>.
+  </div>
+</body>
+</html>
